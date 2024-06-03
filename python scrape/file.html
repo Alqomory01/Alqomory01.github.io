@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Digital Fortress Institute
+  </title>
+  <meta content="" name="description"/>
+  <meta content="" name="keywords"/>
+  <!-- Favicons -->
+  <link href="/static/img/fortress_logo.JPG-removebg-preview.png" rel="icon"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
+  <!-- Vendor CSS Files -->
+  <!-- <link href="{% static 'vendor/aos/aos.css" rel="stylesheet"> -->
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="/static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="/static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+  <link href="/static/vendor/remixicon/remixicon.css" rel="stylesheet"/>
+  <link href="/static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+  <!-- Template Main CSS File -->
+  <link href="/static/css/style.css" rel="stylesheet"/>
+  <style>
+   .allform{
+  display: flex;
+  justify-content: center;
+}
+.form {
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+  width: 500px;
+}
+  
+
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #dc2f55;
+}
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
+  </style>
+ </head>
+ <body>
+  <!--navbar-->
+  <!-- ======= Header ======= -->
+  <header class="header fixed-top" id="header">
+   <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <a class="logo d-flex align-items-center" href="/">
+     <img alt="" src="/static/img/fortress_logo.JPG-removebg-preview.png"/>
+    </a>
+    <nav class="navbar" id="navbar">
+     <ul>
+      <li>
+       <a class="nav-link scrollto" href="/about">
+        About Us
+       </a>
+      </li>
+      <li>
+       <a class="nav-link scrollto" href="/courses">
+        Courses
+       </a>
+      </li>
+      <li>
+       <a class="nav-link scrollto" href="/faq">
+        Faq
+       </a>
+      </li>
+      <li>
+       <a class="nav-link scrollto" href="/blogs">
+        Blogs
+       </a>
+      </li>
+      <li class="dropdown">
+       <a href="#">
+        <span>
+         Program
+        </span>
+        <i class="bi bi-chevron-down">
+        </i>
+       </a>
+       <ul>
+        <li>
+         <a href="/certificate">
+          Verify Certificate
+         </a>
+        </li>
+        <li>
+         <a href="/courses/books">
+          Digital School Books
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="/enquiry">
+        Enquiry
+       </a>
+      </li>
+     </ul>
+     <i class="bi bi-list mobile-nav-toggle">
+     </i>
+    </nav>
+    <!-- .navbar -->
+   </div>
+  </header>
+  <!-- End Header -->
+  <!--main-->
+  <br/>
+  <!-- ======= Hero Section ======= -->
+  <section class="hero d-flex align-items-center" id="hero">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-6 d-flex flex-column justify-content-center">
+      <h1 data-aos="fade-up" style="color: #012970">
+       We bring technology to your space
+      </h1>
+      <h2 data-aos="fade-up" data-aos-delay="400" style="color: #4154f1;">
+       Get the best of digital technolgy services from Training to Transfromation
+      </h2>
+      <div data-aos="fade-up" data-aos-delay="600">
+       <div class="d-grid gap-2 d-md-block">
+        <a class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center" href="courses">
+         <span>
+          Explore Courses
+         </span>
+         <i class="bi bi-arrow-right">
+         </i>
+        </a>
+        <a class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center" href="about">
+         <span>
+          Explore services
+         </span>
+         <i class="bi bi-arrow-right">
+         </i>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
+      <img alt="" class="hero hero-img align-items-center" src="/static/img/AI-Shutter.gif"/>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- End Hero -->
+  <main id="main">
+   <!-- ======= About Section ======= -->
+   <section class="about" id="about">
+    <div class="container" data-aos="fade-up">
+     <div class="row gx-0">
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+       <div class="content">
+        <h3 style="color: #ff5a4b;">
+         Who We Are
+        </h3>
+        <h2>
+         Digital Fortress, the leading Global Talent Development
+              Corporatio
+        </h2>
+        <p>
+         Digital Fortress Limited opened for business officially in July
+              2006 in GRA Ikeja.
+              With a parent company based in the United Kingdom, ForteSoft
+              opened with a vision for
+              the development of the ICT industry in Nigeria.
+         <br/>
+         <br/>
+        </p>
+        <div class="text-center text-lg-start">
+         <a class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center" href="/about">
+          <span style="color: #a10000;">
+           Read More
+          </span>
+          <i class="bi bi-arrow-right" style="color: #a10000;">
+          </i>
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+       <img alt="" class="img-fluid" src="static/img/fortress_logo.JPG-removebg-preview.png"/>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End About Section -->
+   <!-- ======= Value section ======= -->
+   <section class="pricing" id="pricing">
+    <div class="container" data-aos="fade-up">
+     <div class="row gy-4" data-aos="fade-left">
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+       <div class="box">
+        <div class="count-box mt-2">
+         <i class="bi bi-check-circle" style="color: #ff5a4b;font-size: 42px;line-height:
+                0;margin-right: 20px; margin-bottom: 50px;">
+         </i>
+         <br/>
+         <div>
+          <br/>
+          <h3 style="color: #0b198f;font-family: fikky5, sans-serif;">
+           EXPERT
+                  INSTRUCTORS
+          </h3>
+          <p style="color: #200000;">
+           Highly experienced and certified
+                  Instructor. Providing latest technology
+                  digital transformation training program like BIG DATA, Java
+                  with DevOps, Digital Marketing.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+       <div class="box">
+        <div class="count-box">
+         <i class="bi bi-graph-up" style="color: #ff5a4b;font-size: 42px;line-height:
+                0;margin-right: 20px;;">
+         </i>
+         <br/>
+         <div>
+          <br/>
+          <h3 style="color: #0b198f;font-family: fikky5, sans-serif;">
+           GREAT
+                  COURSES
+          </h3>
+          <p style="color: #200000;">
+           Highly experienced and certified
+                  Instructor. Providing latest technology
+                  digital transformation training program like BIG DATA, Java
+                  with DevOps, Digital Marketing.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+       <div class="box">
+        <div class="count-box">
+         <i class="bi bi-gear" style="color: #ff5a4b;font-size:
+                42px;line-height: 0;margin-right: 20px;;">
+         </i>
+         <br/>
+         <div>
+          <br/>
+          <h3 style="color: #0b198f;font-family: fikky5, sans-serif;">
+           METHODOLOGY
+          </h3>
+          <p style="color: #200000;">
+           Highly experienced and certified
+                  Instructor. Providing latest technology
+                  digital transformation training program like BIG DATA, Java
+                  with DevOps, Digital Marketing.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+       <div class="box">
+        <div class="count-box">
+         <i class="bi bi-check-all" style="color: #ff5a4b;font-size: 42px;line-height:
+                0;margin-right: 20px;;">
+         </i>
+         <br/>
+         <div>
+          <br/>
+          <h3 style="color: #0b198f;font-family: fikky5, sans-serif;">
+           TRUSTED
+                  CERTIFICATES
+          </h3>
+          <p style="color: #200000;">
+           Highly experienced and certified
+                  Instructor. Providing latest technology
+                  digital transformation training program like BIG DATA, Java
+                  with DevOps, Digital Marketing.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Pricing Section -->
+   <!-- ======= Counts Section ======= -->
+   <section class="counts" id="counts">
+    <div class="container" data-aos="fade-up">
+     <div class="row gy-4">
+      <div class="col-lg-3 col-md-6">
+       <div class="count-box">
+        <i class="bi bi-calendar-check" style="color: #ff5a4b;">
+        </i>
+        <div>
+         <span class="purecounter" data-purecounter-duration="1" data-purecounter-end="15" data-purecounter-start="0">
+         </span>
+         <p>
+          Years of Experience
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+       <div class="count-box">
+        <i class="bi bi-symmetry-vertical" style="color: #ff5a4b;">
+        </i>
+        <div>
+         <span class="purecounter" data-purecounter-duration="1" data-purecounter-end="521" data-purecounter-start="0">
+         </span>
+         <p>
+          Graduates annually
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+       <div class="count-box">
+        <i class="bi bi-house" style="color: #ff5a4b;">
+        </i>
+        <div>
+         <span class="purecounter" data-purecounter-duration="1" data-purecounter-end="6" data-purecounter-start="0">
+         </span>
+         <p>
+          Operational centers
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+       <div class="count-box">
+        <i class="bi bi-people" style="color: #ff5a4b;">
+        </i>
+        <div>
+         <span class="purecounter" data-purecounter-duration="1" data-purecounter-end="60" data-purecounter-start="0">
+         </span>
+         <p>
+          Placement pathners
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Counts Section -->
+   <!-- ======= Clients Section ======= -->
+   <section class="clients" id="clients">
+    <div class="container" data-aos="fade-up">
+     <header class="section-header">
+      <h2>
+       Our Clients
+      </h2>
+     </header>
+     <div class="clients-slider swiper">
+      <div class="swiper-wrapper align-items-center">
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/clients/unionlogo.png"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/clients/sterlinglogo.png"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/clients/unkown.jpg"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/tower.webp"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/unilever.webp"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/fidelity logo.jpg"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/firstbank logo.png"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/fitness.png"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/chevronlogo.png"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/zenith logo.webp"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/unilever.webp"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/armylogo.jpg"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/mrs logo.webp"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/NDIC logo.png"/>
+       </div>
+       <div class="swiper-slide">
+        <img alt="" class="img-fluid" src="static/img/clients/New-mtn-logo.jpg"/>
+       </div>
+      </div>
+      <div class="swiper-pagination">
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Clients Section -->
+   <!-- ======= Values Section ======= -->
+   <section class="values" id="values">
+    <div class="container" data-aos="fade-up">
+     <header class="section-header">
+      <h2>
+       Our Market
+      </h2>
+      <p>
+       Who we serve
+      </p>
+     </header>
+     <div class="row">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+       <div class="box">
+        <img alt="" class="img-fluid" src="static/img/blog/img11.JPG"/>
+        <h3>
+         Cooperate Organizations
+        </h3>
+       </div>
+      </div>
+      <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+       <div class="box">
+        <img alt="" class="img-fluid" src="static/img/blog/img12.JPG"/>
+        <br/>
+        <h3>
+         Educational Institutions
+        </h3>
+        <!-- <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p> -->
+       </div>
+      </div>
+      <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+       <div class="box">
+        <img alt="" class="img-fluid" src="static/img/blog/img13.JPG"/>
+        <br/>
+        <h3>
+         Young ICT Enthusiast/
+              Prospective Programmers
+        </h3>
+        <!-- <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p> -->
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Values Section -->
+   <!-- ======= Services Section ======= -->
+   <section class="services" id="services">
+    <div class="container" data-aos="fade-up">
+     <header class="section-header">
+      <h2>
+       Our Delivery
+      </h2>
+      <p>
+       Courses offered
+      </p>
+     </header>
+     <div class="row gy-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+       <div class="service-box red">
+        <i class="ri-discuss-line icon">
+        </i>
+        <h3>
+         Data Analytics
+        </h3>
+        <p>
+         This data analytics course takes you through designing and maintaining systems and databases, learning this course could place you in different job roles, from data analysts, to business intelligence analyst, to data engineering, to quantitative analyst and more..
+        </p>
+        <a class="read-more" href="/courses/course/3/">
+         <span>
+          Read
+                More
+         </span>
+         <i class="bi bi-arrow-right">
+         </i>
+        </a>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+       <div class="service-box red">
+        <i class="ri-discuss-line icon">
+        </i>
+        <h3>
+         Python For Beginners
+        </h3>
+        <p>
+         This python for beginners course introduces you to the new world of possibilities, it gives you the foundation you need to go into the advanced course, it can be used for machine learning, robotics, artificial intelligence and data analytics. It is well detailed with a lot of lab-work, exercise and projects..
+        </p>
+        <a class="read-more" href="/courses/course/4/">
+         <span>
+          Read
+                More
+         </span>
+         <i class="bi bi-arrow-right">
+         </i>
+        </a>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+       <div class="service-box red">
+        <i class="ri-discuss-line icon">
+        </i>
+        <h3>
+         Advance Python
+        </h3>
+        <p>
+         The advanced python course has a lot of projects and packages, from working and building desktop apps to game apps and other fun and interesting apps. it can be used for machine learning, robotics, artificial intelligence and data analytics..
+        </p>
+        <a class="read-more" href="/courses/course/5/">
+         <span>
+          Read
+                More
+         </span>
+         <i class="bi bi-arrow-right">
+         </i>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Services Section -->
+   <!-- ======= Recent Blog Posts Section ======= -->
+   <section class="recent-blog-posts" id="recent-blog-posts">
+    <div class="container" data-aos="fade-up">
+     <header class="section-header">
+      <h2>
+       Blog
+      </h2>
+      <p>
+       Recent posts
+      </p>
+     </header>
+     <div class="row">
+      <div class="col-md-12">
+       <h3 class="text-center" style="color:#4154f1;">
+        No Blog available yet check back
+       </h3>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Recent Blog Posts Section -->
+   <!-- ======= Contact Section ======= -->
+   <section class="contact" id="contact">
+    <div class="container" data-aos="fade-up">
+     <header class="section-header">
+      <h2>
+       Get in touch
+      </h2>
+      <p>
+       Contact Us
+      </p>
+     </header>
+     <div class="row gy-4">
+      <div class="col-lg-6">
+       <div class="row gy-4">
+        <div class="col-md-6">
+         <div class="info-box">
+          <i class="bi bi-geo-alt">
+          </i>
+          <h3>
+           Address
+          </h3>
+          <p>
+           26 Shasha Road (Union Bank Building), Dopemu, Lagos Nigeria
+          </p>
+         </div>
+        </div>
+        <div class="col-md-6">
+         <div class="info-box">
+          <i class="bi bi-telephone">
+          </i>
+          <h3>
+           Call Us
+          </h3>
+          <p>
+           +2349092337358
+           <br/>
+           +2349092349810
+          </p>
+         </div>
+        </div>
+        <div class="col-md-6">
+         <div class="info-box">
+          <i class="bi bi-envelope">
+          </i>
+          <h3>
+           Email Us
+          </h3>
+          <p>
+           info@digitalfortressltd.com
+          </p>
+         </div>
+        </div>
+        <div class="col-md-6">
+         <div class="info-box">
+          <i class="bi bi-clock">
+          </i>
+          <h3>
+           Open Hours
+          </h3>
+          <p>
+           Monday - Friday
+           <br/>
+           9:00AM - 05:00PM
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-6">
+       <form action="/" method="post">
+        <input name="csrfmiddlewaretoken" type="hidden" value="kMUQ9ouI6HXJFcEFyuxnrQn2VieNMeHqQAkuCfNsIHXsJQReFf2Uo6LKoCMFDLuG"/>
+        <div class="php-email-form">
+         <div class="row gy-4">
+          <div class="col-md-6">
+           <input class="form-control" name="name" placeholder="Your Name" required="" type="text"/>
+          </div>
+          <div class="col-md-6">
+           <input class="form-control" name="email" placeholder="Your Email" required="" type="email"/>
+          </div>
+          <div class="col-md-12">
+           <input class="form-control" name="subject" placeholder="Subject" required="" type="text"/>
+          </div>
+          <div class="col-md-12">
+           <textarea class="form-control" name="message" placeholder="Message" required="" rows="6"></textarea>
+          </div>
+          <div class="col-md-12 text-center">
+           <button type="submit">
+            Send Message
+           </button>
+          </div>
+         </div>
+        </div>
+       </form>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Contact Section -->
+  </main>
+  <!-- End #main -->
+  <!--footer-->
+  <!-- ======= Footer ======= -->
+  <footer class="footer" id="footer">
+   <div class="footer-newsletter">
+    <div class="container">
+     <div class="row justify-content-center">
+      <div class="col-lg-12 text-center">
+       <h4>
+        Our Newsletter
+       </h4>
+       <p>
+        Kindly Subscribe to our newsletter for various update and development
+       </p>
+      </div>
+      <div class="col-lg-6">
+       <form action="" method="post">
+        <input name="email" type="email"/>
+        <input type="submit" value="Subscribe"/>
+       </form>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="footer-top">
+    <div class="container">
+     <div class="row gy-4">
+      <div class="col-lg-3 col-md-12 footer-info">
+       <a class="logo d-flex align-items-center" href="index.html">
+        <img alt="" src="static/img/fortress_logo.JPG-removebg-preview.png"/>
+       </a>
+       <p>
+        Digital Fortress is an ICT skills and talent development brand with decades of experience in the digital technology space and partnerships with top technology brands.
+       </p>
+       <div class="social-links mt-3">
+        <a class="twitter" href="https://twitter.com/digital4tresltd">
+         <i class="bi bi-twitter">
+         </i>
+        </a>
+        <a class="facebook" href="https://www.facebook.com/digital4tresltd">
+         <i class="bi bi-facebook">
+         </i>
+        </a>
+        <a class="instagram" href="https://www.instagram.com/digital4tresltd/">
+         <i class="bi bi-instagram">
+         </i>
+        </a>
+        <a class="linkedin" href="https://www.linkedin.com/company/digital4tresltd">
+         <i class="bi bi-linkedin">
+         </i>
+        </a>
+        <a class="linkedin" href=" https://www.youtube.com/@digital4tresltd">
+         <i class="bi bi-youtube">
+         </i>
+        </a>
+       </div>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+       <h4>
+        Useful Links
+       </h4>
+       <ul>
+        <li>
+         <i class="bi bi-chevron-right">
+         </i>
+         <a href="/">
+          Home
+         </a>
+        </li>
+        <li>
+         <i class="bi bi-chevron-right">
+         </i>
+         <a href="/about">
+          Who we are
+         </a>
+        </li>
+        <li>
+         <i class="bi bi-chevron-right">
+         </i>
+         <a href="/courses">
+          what we do
+         </a>
+        </li>
+        <li>
+         <i class="bi bi-chevron-right">
+         </i>
+         <a href="/team">
+          Team
+         </a>
+        </li>
+        <li>
+         <i class="bi bi-chevron-right">
+         </i>
+         <a href="/faq">
+          Faq
+         </a>
+        </li>
+        <li>
+         <i class="bi bi-chevron-right">
+         </i>
+         <a href="/blogs">
+          Blog
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="row col-md-6">
+       <div class="col-lg-6 col-md-12 footer-contact text-center text-md-start">
+        <h4>
+         Contact Us
+        </h4>
+        <h5>
+         <i class="bi bi-geo-alt">
+         </i>
+         Dopemu Center
+        </h5>
+        <p>
+         26 Shasha Road (Union Bank Building), Dopemu, Lagos Nigeria
+        </p>
+        <p>
+         <i class="bi bi-phone-fill" style="color:#4154f1;">
+         </i>
+         <a href="tel:+234909233735">
+          <strong>
+           Phone:
+          </strong>
+          +2349092337358
+          <br/>
+         </a>
+         <i class="bi bi-phone-fill" style="color:#4154f1;">
+         </i>
+         <a href="tel:+2349092349810">
+          <strong>
+           Phone:
+          </strong>
+          +2349092349810
+          <br/>
+         </a>
+         <i class="bi bi-envelope-plus" style="color:#4154f1;">
+         </i>
+         <a href="mailto: akoowonjo@digitalfortressltd.co">
+          akowonjo@digitalfortressltd.com
+          <br/>
+         </a>
+        </p>
+       </div>
+       <div class="col-lg-6 col-md-12 footer-contact text-center text-md-start">
+        <h5>
+         <i class="bi bi-geo-alt">
+         </i>
+         Anthony Center
+        </h5>
+        <p>
+         6 Anthony Village Road opposite studio 24, Anthony, Lagos Nigeria.
+        </p>
+        <p>
+         <i class="bi bi-phone-fill" style="color:#4154f1;">
+         </i>
+         <a href="tel:+2349087197390">
+          <strong>
+           Phone:
+          </strong>
+          +2349087197390
+          <br/>
+         </a>
+         <!--<a href = "mailto: abc@example.com">Send Email</a>-->
+         <i class="bi bi-envelope-plus" style="color:#4154f1;">
+         </i>
+         <a href="mailto: anthony@digitalfortressltd.co">
+          anthony@digitalfortressltd.com
+          <br/>
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <a class="chat-bot d-flex align-items-center justify-content-center" href="#">
+    <i class="bi bi-whatsapp">
+    </i>
+   </a>
+   <a class="back-to-top d-flex align-items-center justify-content-center" href="#">
+    <i class="bi bi-arrow-up-short">
+    </i>
+   </a>
+   <div class="container">
+    <div class="copyright">
+     © Copyright
+     <script>
+      document.write(new Date().getFullYear())
+     </script>
+     <strong>
+      <span>
+       Digital Fortress
+      </span>
+     </strong>
+     . All Rights Reserved
+    </div>
+    <div class="credits">
+     Designed by
+     <a href="about">
+      Digital Fortress
+     </a>
+    </div>
+   </div>
+  </footer>
+  <!-- End Footer -->
+  <a class="chat-bot d-flex align-items-center justify-content-center" href="#">
+   <i class="bi bi-whatsapp">
+   </i>
+  </a>
+  <!-- Vendor JS Files -->
+  <script src="/static/vendor/purecounter/purecounter.js">
+  </script>
+  <script src="/static/vendor/aos/aos.js">
+  </script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/static/vendor/glightbox/js/glightbox.min.js">
+  </script>
+  <script src="/static/vendor/isotope-layout/isotope.pkgd.min.js">
+  </script>
+  <script src="/static/vendor/swiper/swiper-bundle.min.js">
+  </script>
+  <script src="/static/js/loader.js">
+  </script>
+  <!-- Template Main JS File -->
+  <script src="/static/js/main.js">
+  </script>
+ </body>
+</html>
+

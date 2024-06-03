@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+</head>
+<style>
+    .grid1{
+        background-color: blueviolet;
+    }
+    .grid2{
+        background-color: brown;
+    }
+    .grid3{
+        background-color: calc();
+    }
+    .grid4{
+        background-color: chocolate;
+    }
+    .grid5{
+        background-color: coral;
+    }
+    .grid6{
+        background-color: darkred;
+    }
+    .CONTAINER{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #ddd;
+        font-size: 30px;
+        margin:40px;
+        display:grid;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 300px 200px; */
+        /* grid-template-columns: 1fr 1fr 1fr auto; */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 300px 200px;
+        column-gap: 20px;
+        row-gap: 30px;
+        /* display: none; */
+    }
+    .grid6{
+        grid-column: 1 / 2 ;
+        grid-row: 2;
+    }
+    .grid7{
+        background-color: darkmagenta;
+    }
+    .grid8{
+        background-color: cyan;
+    }
+    .grid9{
+        background-color: darkgreen;
+    }
+    .grid10{
+        background-color: darkorange;
+    }
+    .grid11{
+        background-color: deeppink;
+    }
+    .CONTAINER-2{
+        font-family: 'Courier New', Courier, monospace;
+        background-color: black;
+        font-size:40px;
+        margin:30px;
+        padding:10px;
+        width:500px;
+        height:750px;
+        gap:40px;
+        justify-content: center;
+        align-content: center;
+        justify-items:end;
+        align-items: end;
+        display:grid;
+        grid-template-columns: 125px 100px 125px;
+        grid-template-rows: 250px 100px;
+    }
+</style>
+<body>
+    <div class="CONTAINER">
+        <div class="grid1">HTML</div>
+        <div class="grid2">CSS</div>
+        <div class="grid3">JAVASCRIPT</div>
+        <div class="grid4">REACT</div>
+        <div class="grid5">REDUX</div>
+        <div class="grid6">TAILWIND</div>
+    </div>
+    <div class="CONTAINER-2">
+        <div class="grid7">PYTHON</div>
+        <div class="grid8">JAVA</div>
+        <div class="grid9">PHP</div>
+        <div class="grid10">C##</div>
+        <div class="grid11">C+</div>
+        
+    </div>
+</body>
+</html>

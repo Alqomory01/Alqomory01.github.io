@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.header_container{
+    display:flex;
+    justify-content: space-between;
+    padding:20px 50px;
+    align-items: center;
+    background-color:  #FEF6F3;
+    position: sticky;
+
+}
+.header_left p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.header_middle ul{
+    display: flex;
+}
+.header_middle ul a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.608);
+   
+}
+.header_middle ul a:hover{
+    color:blue
+}
+
+li{
+    justify-content: space-between;
+    padding:0 10px;
+}
+.header_right{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    margin-right: 10px;
+    background-color: white;
+    padding: 13px;
+    color:blue;
+    border-radius: 3px;
+}
+.login{
+    background-color: blue;
+    padding:0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    color:white;
+}
+.login .bi-search{
+    margin-right: 5px;
+}
+.login p{
+    font-size: 20px;
+}
+.banner{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height:100vh;
+    background-color: #FEF6F3;
+    position: relative;
+    
+}
+.Banner_left{
+    padding-left:70px;
+    margin-top: 20px;
+    
+}
+.Banner_left .first{
+    text-transform: capitalize;
+    padding:10px 0;
+    color:blue;
+}
+.Banner_left h2{
+    font-size: 70px;
+    padding-bottom: 40px 0;
+
+}
+.Banner_left .second{
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+.learnmore{
+    padding:15px 10px;
+    background-color: blue;
+    border-radius: 10px;
+    color:white;
+}
+.Banner_right{
+    margin-top: 150px;
+    padding-top:150px;
+}
+.banner .Banner_right .image2{
+    position:absolute;
+    top:20px;
+    left:50%;
+    right:20px;
+    z-index: 50;
+}
+.banner .Banner_right .image1{
+    position:absolute;
+    z-index: 100;
+    right:0;
+    top:15px;
+}
+.banner .Banner_right .image3{
+    position: absolute;
+    top:-40px;
+    left:75%;
+    z-index: 100;
+}

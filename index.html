@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Css</title>
+</head>
+<style>
+    p{
+        background-color: white;
+/* p is a selector
+ background-color: white; the whole of this is declaration
+ background-color this is property
+ white is value*/
+        color:blue;
+        font-size: 400;
+        font-family: 'Courier New', Courier, monospace;
+        border: 2px solid red;
+    }
+        #zaynab{
+            color:pink;
+            font-size: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .zaynab{
+            color:brown;
+            font-size: 700;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: normal;
+        }
+       h1,h2, h3{
+        font: 800;
+        font-size: xx-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        text-transform: capitalize;
+       }
+     p:first-child{
+        font-style: italic;
+       }
+
+   
+</style>
+<body>
+    <a href="blog.html" style="position: center;">My Blog</a>
+    <br>
+    Basic css syntax and structure
+    <p> Welcome to Digital Fotress Class</p>
+    Css Selectors
+    1-The element selector
+    <p>Welcome to Digital Fortress</p>
+    2- The Css id selector
+    <p id="zaynab">Welcome to Digital Fortress</p>
+    3- The Css class selector
+    <p class="zaynab">Welcome to Digital Fortress</p>
+    4- The Universal selector
+    *{
+        padding:0;  
+        marging:0;
+        list-style:none;
+    }
+    5-The Css Grouping Selector
+    <h1>This is Web development class</h1>
+    <h2>This is the begining of the class</h2>
+    <h3>we can start it off from here</h3>
+    <!-- Inline Styling -->
+    <p style="background-color: blueviolet; color:azure; border: 2px dashed ">this is how we style inline</p>
+</body>
+</html>

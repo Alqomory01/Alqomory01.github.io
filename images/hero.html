@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .navbar {
+        margin: 0 auto;
+        width: 1200px;
+      }
+      header {
+        height: 100vh;
+        position:relative;
+        background-image: linear-gradient(rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)),
+            url(hero.jpg);
+        
+        background-size: cover;
+        color: white;
+        /* background-color: pink; */
+      }
+      nav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        font-size: 30px;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+      }
+      .header-container{
+        position:absolute;
+        width:1200px;
+        left:50%;
+        top:50%;
+        transform:translate(-50%, -50%)
+
+      }
+      .header-container2{
+        width:50%;
+      }
+      h2{
+        margin-bottom: 30px;
+        font-size: 52px;
+        line-height: 1.7;
+      }
+      p{
+        margin-bottom: 25px;
+        font-size: 25px;
+      }
+      .btn{
+        padding:10px 15px;
+        border-radius: 8px;
+        background-color: brown;
+        color: white;
+        font-size: 23px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>Logo</div>
+        <div>Navigation</div>
+      </nav>
+      <div class="header-container">
+        <div class="header-container2">
+        <h2>A healthy meal delivered to your door, every single day</h2>
+        <p>
+          The smart 365-days-per-year food subsription that will make you eat
+          health algain. Tailored to your personal tatstes and nutriotional
+          needs
+        </p>
+        <button class="btn">Start eating well</button>
+      </div>
+    </div>
+    </header>
+  </body>
+</html>

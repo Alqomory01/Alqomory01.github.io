@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    /* height:100vh; */
+   color:black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border-top: 10px solid #1098ad;
+   position:relative;
+
+}
+.container{
+    width:900px;
+    /* margin:0 auto; */
+    margin-left: 10px;
+    margin:0 auto;
+}
+.top_header{
+    display:flex;
+    margin:10px 10px;
+    text-align: center;
+    justify-content:space-between;
+}
+.free_demo{
+    background-color: blue;
+    border-radius: 10px;
+    padding:5px 10px;
+    color:white;
+
+}
+/* .nav_bar2{
+/* list-style: none; */
+/* text-decoration: none;
+} */
+.nav_bar{
+    justify-content: center;
+    margin: 20px 25px;
+    text-align: center;
+    justify-content: center;
+}
+.nav_bar a{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+    margin: 30px 15px;
+}
+article h1{
+    font-size: 70rem;
+    margin:15px auto;
+    }
+.download{
+    background-color: rgb(236, 15, 15);
+    border-radius: 20px;
+    /* border-radius: inherit; */
+    width:80%;
+    padding:10px 20px;
+    color:white;
+    margin:10px 0;
+}
+.line{
+    font-weight: bold;
+    line-height: 5px;
+    text-decoration-thickness: 50px;
+    border: 1px solid black;
+    margin:20px 0;
+    
+}
+.date{
+    display:flex;
+    justify-content: space-between;
+}
+a:hover{
+    color:blue;
+    font-weight:bold;
+    text-decoration: underline;
+}
+.image{
+    /* display:flex; */
+    /* text-align: center; */
+    display:grid;
+    place-items: center;
+    /* display:block;
+    margin:0 auto; */
+    margin-bottom: 15px;
+}
+/* img{
+    display:block;
+    margin:auto;
+} */
+    
+
+.image{
+    /* display:flex; */
+    justify-content: center;
+}
+.Download{
+    margin-top:30px;
+    display:flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+.related{
+    list-style: none;
+}
+aside{
+    border-top: 5px solid rgba(0, 0, 255, 0.425);
+    border-bottom: 5px solid rgba(0, 0, 255, 0.425);
+    background-color: aliceblue;
+    padding: 50px 0;
+    width: 500px;
+    margin-bottom: 0;
+}
